@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "marcode-aulinux"
+url: "https://takeda-ma.github.io"
 
 github:
   username: "takeda-ma" # change to your GitHub username
@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/marcode_aulinux"
 
 # ------------ The following options are not recommended to be modified ------------------
 
