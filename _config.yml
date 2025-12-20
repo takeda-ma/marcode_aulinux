@@ -29,17 +29,17 @@ github:
   username: "takeda-ma" # change to your GitHub username
 
 twitter:
-  username: "marcode aulinux" # change to your Twitter username
+  username: "marcode_aulinux" # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: "marcode aulinux"
-  email: "takeda-ma" # change to your email address
+  email: "marcode.aulinux@example.com" # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - "marcode aulinux" # change to your Twitter homepage
-    - "marcode aulinux" # change to your GitHub homepage
+    - "https://twitter.com/marcode_aulinux" # change to your Twitter homepage
+    - "https://github.com/takeda-ma" # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
