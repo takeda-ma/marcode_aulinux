@@ -149,6 +149,9 @@ pwa:
 
 paginate: 10
 
+# Show posts with future dates (useful when local time differs from CI time).
+future: true
+
 # The base URL of your site
 baseurl: "/marcode_aulinux"
 
