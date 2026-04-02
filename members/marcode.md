@@ -5,7 +5,7 @@ permalink: /members/marcode/
 ---
 
 <div style="display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:2rem;">
-  <img src="/marcode_aulinux/assets/img/members/marcode.svg"
+  <img src="/assets/img/members/marcode.svg"
        alt="marcode aulinux"
        style="width:120px;height:120px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(128,128,128,.2);">
   <div>
