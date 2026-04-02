@@ -24,9 +24,15 @@ order: 5
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
 
-  .member-row:hover {
+  a.member-row {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a.member-row:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    color: inherit;
   }
 
   .member-icon {
@@ -87,15 +93,23 @@ order: 5
 
 <div class="members-page">
   {% for member in site.data.members %}
-    <div class="member-row">
-      <div class="member-icon">
-        {{ member.initials }}
-      </div>
+    {% if member.url %}
+      <a class="member-row" href="{{ member.url | relative_url }}">
+    {% else %}
+      <div class="member-row">
+    {% endif %}
+
+      <div class="member-icon">{{ member.initials }}</div>
 
       <div class="member-content">
         <p class="member-name">{{ member.name }}</p>
         <p class="member-role">{{ member.role }}</p>
       </div>
-    </div>
+
+    {% if member.url %}
+      </a>
+    {% else %}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
