@@ -96,39 +96,26 @@ order: 5
 
 <div class="services-hero">
   <h1>Services</h1>
-  <p>12 years of software engineering applied to game development. I take on focused projects where deep technical work matters.</p>
+  <p>Focused Unreal Engine 5 development work. I take on projects where deep technical execution matters.</p>
 </div>
 
 <div class="services-grid">
 
   <div class="service-card">
     <div class="icon"><i class="fas fa-gamepad"></i></div>
-    <h3>Unreal Engine 5 Development</h3>
-    <p>End-to-end UE5 game feature development — gameplay systems, AI behaviour, ability systems (GAS), and real-time performance optimisation for shipping titles.</p>
+    <h3>Gameplay Systems</h3>
+    <p>End-to-end feature development in UE5 — combat systems, input handling, game modes, and the glue code that makes everything feel tight.</p>
     <div class="service-tags">
       <span class="service-tag">Unreal Engine 5</span>
       <span class="service-tag">C++</span>
       <span class="service-tag">Blueprints</span>
-      <span class="service-tag">GAS</span>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-robot"></i></div>
-    <h3>Game AI Systems</h3>
-    <p>Custom AI controllers, behaviour scoring systems, and enemy/companion logic that scales to hundreds of agents without tanking frame time.</p>
-    <div class="service-tags">
-      <span class="service-tag">AI Controllers</span>
-      <span class="service-tag">Behaviour Trees</span>
-      <span class="service-tag">Custom AI</span>
-      <span class="service-tag">Performance</span>
     </div>
   </div>
 
   <div class="service-card">
     <div class="icon"><i class="fas fa-bolt"></i></div>
-    <h3>Gameplay Ability Systems</h3>
-    <p>Scalable ability frameworks built on GAS — skills, buffs, debuffs, targeting pipelines, and proc systems designed for both players and AI-controlled characters.</p>
+    <h3>Gameplay Ability System (GAS)</h3>
+    <p>Scalable ability frameworks — skills, buffs, debuffs, targeting pipelines, and proc systems built to work for both players and AI-controlled characters.</p>
     <div class="service-tags">
       <span class="service-tag">GAS</span>
       <span class="service-tag">Abilities</span>
@@ -138,38 +125,26 @@ order: 5
   </div>
 
   <div class="service-card">
+    <div class="icon"><i class="fas fa-robot"></i></div>
+    <h3>AI & NPC Systems</h3>
+    <p>Custom AI controllers, score-based decision systems, and enemy/companion behaviour that scales to large NPC counts without killing frame time.</p>
+    <div class="service-tags">
+      <span class="service-tag">AI Controllers</span>
+      <span class="service-tag">Custom AI</span>
+      <span class="service-tag">NPC</span>
+      <span class="service-tag">Performance</span>
+    </div>
+  </div>
+
+  <div class="service-card">
     <div class="icon"><i class="fas fa-users"></i></div>
-    <h3>Character & Animation Systems</h3>
-    <p>Modular character pipelines, skeletal mesh setup, rigging integration, and skinning workflows connecting Blender and Marvelous Designer to UE5.</p>
+    <h3>Character & Animation Integration</h3>
+    <p>Modular character pipelines connecting Blender and Marvelous Designer to UE5 — skeletal mesh setup, rigging, skinning, and animation blueprint wiring.</p>
     <div class="service-tags">
       <span class="service-tag">Blender</span>
       <span class="service-tag">Marvelous Designer</span>
       <span class="service-tag">Rigging</span>
       <span class="service-tag">UE5</span>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-server"></i></div>
-    <h3>Backend & Tools Engineering</h3>
-    <p>12 years of software engineering across backend systems, automation, and internal tooling. Available for consulting on architecture, code review, and technical planning.</p>
-    <div class="service-tags">
-      <span class="service-tag">Backend</span>
-      <span class="service-tag">Architecture</span>
-      <span class="service-tag">Consulting</span>
-      <span class="service-tag">Code Review</span>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-cube"></i></div>
-    <h3>Technical Prototyping</h3>
-    <p>Fast, focused prototypes to validate game mechanics, AI approaches, or system designs before committing to a full implementation.</p>
-    <div class="service-tags">
-      <span class="service-tag">Prototyping</span>
-      <span class="service-tag">R&D</span>
-      <span class="service-tag">UE5</span>
-      <span class="service-tag">Feasibility</span>
     </div>
   </div>
 
