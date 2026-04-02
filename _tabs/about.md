@@ -33,9 +33,9 @@ order: 4
 }
 
 .members-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -43,47 +43,24 @@ order: 4
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  color: inherit;
-  padding: 2rem 1rem 1.6rem;
+  text-decoration: none !important;
+  color: inherit !important;
   text-align: center;
   transition: transform .2s;
+  width: 140px;
 }
 .member-card:hover {
   transform: translateY(-4px);
-  color: inherit;
-  text-decoration: none;
 }
-.member-card:hover .member-avatar {
-  border-color: var(--link-color, #6ea8fe);
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+.member-card:hover img {
+  box-shadow: 0 8px 24px rgba(0,0,0,.3);
 }
-.member-avatar {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2.5px solid rgba(128,128,128,.25);
-  margin-bottom: 1.1rem;
-  transition: border-color .2s, box-shadow .2s;
-  flex-shrink: 0;
-}
-.member-avatar img {
-  width: 100%;
-  height: 100%;
+.member-card img {
+  width: 112px;
+  height: 112px;
   object-fit: cover;
-  display: block;
-}
-.member-card .name {
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: .3rem;
-  line-height: 1.3;
-}
-.member-card .role {
-  font-size: .78rem;
-  opacity: .5;
-  line-height: 1.5;
+  margin-bottom: .9rem;
+  transition: box-shadow .2s;
 }
 </style>
 
@@ -97,11 +74,9 @@ order: 4
 <div class="members-grid">
 
   <a class="member-card" href="{{ '/members/johji/' | relative_url }}">
-    <div class="member-avatar">
-      <img src="/assets/img/members/johji.svg" alt="Johji">
-    </div>
-    <div class="name">Johji</div>
-    <div class="role">Founder · Lead Engineer</div>
+    <img src="/assets/img/members/johji.svg" alt="Johji" class="rounded-circle">
+    <span class="site-title d-block">Johji</span>
+    <span class="site-subtitle fst-italic">Founder · Lead Engineer</span>
   </a>
 
 </div>
