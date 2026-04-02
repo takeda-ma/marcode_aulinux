@@ -2,7 +2,7 @@
 # the default layout is 'page'
 title: Services
 icon: fas fa-briefcase
-order: 5
+order: 6
 ---
 
 <style>
