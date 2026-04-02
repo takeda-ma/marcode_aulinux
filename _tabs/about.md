@@ -88,7 +88,7 @@ order: 4
 
 <div class="members-grid">
 
-  <a class="member-card" href="/members/marcode/">
+  <a class="member-card" href="{{ '/members/marcode/' | relative_url }}">
     <img src="/assets/img/members/marcode.svg" alt="marcode aulinux">
     <div class="name">marcode aulinux</div>
     <div class="role">Founder · Lead Engineer</div>
