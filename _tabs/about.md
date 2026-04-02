@@ -5,78 +5,47 @@ order: 4
 ---
 
 <style>
-.about-intro {
-  text-align: center;
-  padding: 2rem 1rem 2.5rem;
-  border-bottom: 1px solid rgba(128,128,128,.12);
-  margin-bottom: 2.5rem;
-}
-.about-intro h1 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin-bottom: .7rem;
-}
-.about-intro p {
-  max-width: 520px;
-  margin: 0 auto;
-  opacity: .7;
-  line-height: 1.8;
-  font-size: .95rem;
-}
-
-.members-heading {
-  font-size: .72rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  opacity: .45;
-  margin-bottom: 1.6rem;
-}
-
-.members-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.member-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.member-card-link {
   text-decoration: none !important;
   color: inherit !important;
-  text-align: center;
   transition: transform .2s;
-  width: 140px;
+  display: block;
 }
-.member-card:hover {
+.member-card-link:hover {
   transform: translateY(-4px);
+  color: inherit !important;
 }
-.member-card:hover img {
-  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+.member-card-link:hover .card {
+  box-shadow: 0 8px 24px rgba(0,0,0,.25) !important;
+  border-color: var(--bs-primary, #6ea8fe) !important;
 }
-.member-card img {
-  width: 112px;
-  height: 112px;
+.member-avatar {
+  width: 96px;
+  height: 96px;
   object-fit: cover;
-  margin-bottom: .9rem;
-  transition: box-shadow .2s;
 }
 </style>
 
-<div class="about-intro">
-  <h1>About Us</h1>
-  <p>Marcode Aulinux is a group of developers who are passionate about developing games using Unreal Engine.</p>
+<div class="text-center border-bottom pb-4 mb-4">
+  <h1 class="fw-bold mb-2">About Us</h1>
+  <p class="text-muted mx-auto" style="max-width:520px;line-height:1.8;">Marcode Aulinux is a group of developers who are passionate about developing games using Unreal Engine.</p>
 </div>
 
-<div class="members-heading">Members</div>
+<p class="text-uppercase text-muted small fw-semibold ls-1 mb-3">Members</p>
 
-<div class="members-grid">
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-4">
 
-  <a class="member-card" href="{{ '/members/johji/' | relative_url }}">
-    <img src="/assets/img/members/johji.svg" alt="Johji" class="rounded-circle">
-    <span class="site-title d-block">Johji</span>
-    <span class="site-subtitle fst-italic">Founder · Lead Engineer</span>
-  </a>
+  <div class="col">
+    <a class="member-card-link" href="{{ '/members/johji/' | relative_url }}">
+      <div class="card h-100 text-center border rounded-3 p-3">
+        <div class="card-body p-0 pt-2">
+          <img src="/assets/img/members/johji.svg" alt="Johji"
+               class="rounded-circle member-avatar mb-3">
+          <h6 class="card-title fw-bold mb-1">Johji</h6>
+          <p class="card-text text-muted small mb-0">Founder · Lead Engineer</p>
+        </div>
+      </div>
+    </a>
+  </div>
 
 </div>
