@@ -96,7 +96,7 @@ order: 5
 
 <div class="services-hero">
   <h1>Services</h1>
-  <p>Focused Unreal Engine 5 development work. I take on projects where deep technical execution matters.</p>
+  <p>We are a specialist Unreal Engine 5 dev shop. We partner with studios and teams that need deep technical execution — not just delivery.</p>
 </div>
 
 <div class="services-grid">
@@ -104,7 +104,7 @@ order: 5
   <div class="service-card">
     <div class="icon"><i class="fas fa-gamepad"></i></div>
     <h3>Unreal Engine 5 Game Development</h3>
-    <p>End-to-end UE5 feature development — gameplay systems, combat, AI & NPC behaviour, ability systems (GAS), character pipelines, and real-time performance optimisation.</p>
+    <p>We build and ship UE5 game features end-to-end — gameplay systems, combat, AI & NPC behaviour, ability systems (GAS), character pipelines, and real-time performance optimisation.</p>
     <div class="service-tags">
       <span class="service-tag">Unreal Engine 5</span>
       <span class="service-tag">C++</span>
@@ -117,7 +117,7 @@ order: 5
   <div class="service-card">
     <div class="icon"><i class="fas fa-comments"></i></div>
     <h3>UE5 Technical Consulting</h3>
-    <p>Architecture reviews, code audits, and technical guidance for teams working with Unreal Engine 5. Available for short engagements focused on specific systems or design decisions.</p>
+    <p>Our team provides architecture reviews, code audits, and hands-on technical guidance for studios working with Unreal Engine 5 — whether you need a second opinion or an embedded technical lead.</p>
     <div class="service-tags">
       <span class="service-tag">Consulting</span>
       <span class="service-tag">Architecture</span>
@@ -129,6 +129,6 @@ order: 5
 </div>
 
 <div class="services-cta">
-  <p>Have a project in mind? Reach out and let's talk about it.</p>
+  <p>Have a project in mind? Let's talk about what we can build together.</p>
   <a href="/marcode_aulinux/contact/">Get in touch</a>
 </div>
