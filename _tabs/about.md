@@ -4,24 +4,94 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-はじめまして、marcode aulinux です。東京在住のソフトウェアエンジニアです。
+<style>
+.about-intro {
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+  border-bottom: 1px solid rgba(128,128,128,.12);
+  margin-bottom: 2.5rem;
+}
+.about-intro h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: .7rem;
+}
+.about-intro p {
+  max-width: 520px;
+  margin: 0 auto;
+  opacity: .7;
+  line-height: 1.8;
+  font-size: .95rem;
+}
 
-## はじまりは Ragnarok Online
+.members-heading {
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .45;
+  margin-bottom: 1.4rem;
+}
 
-プログラミングに興味を持ったのは10歳のとき、Ragnarok Online をプレイしていた頃です。そこで[ **OpenKore**](https://github.com/OpenKore/openkore) というオープンソースのオートメーションシステムに出会いました。キャラクターのグラインドやレベル上げを自動化するツールです。
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.4rem;
+  margin-bottom: 3rem;
+}
 
-最初はただコンフィグファイルを読んで、自分のキャラが自律的に動くように少しずつ設定を弄るだけでした。その後、別キャラを24時間365日トレードさせるための簡単なマクロを書けるようになりました。当時の自分は「プログラミング」という言葉すら知らなかった。ただ、キャラクターが自分の代わりに動き続けるという感覚が、とにかく圧倒的に面白かったのです。
+.member-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(128,128,128,.18);
+  border-radius: 14px;
+  padding: 1.6rem 1rem 1.2rem;
+  text-align: center;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+  background: var(--card-bg, rgba(255,255,255,.02));
+}
+.member-card:hover {
+  border-color: var(--link-color, #6ea8fe);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  color: inherit;
+  text-decoration: none;
+}
+.member-card img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(128,128,128,.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.member-card .name {
+  font-weight: 700;
+  font-size: .95rem;
+  margin-bottom: .25rem;
+}
+.member-card .role {
+  font-size: .78rem;
+  opacity: .55;
+}
+</style>
 
-そこから自分で試行錯誤するようになりました。システムをヘッドレスで動かす方法を調べ、ヘッドレスの方が処理が速いことに気づき、最終的には50〜100体ものボットを同時に走らせるようになりました。さらにボット同士がお互いにバフをかけ合い、パーティー全員が揃ってからグラインドを開始するようなオーケストレーションまで組んでいました。今思えばあれは立派な分散システムの原体験です。
+<div class="about-intro">
+  <h1>私たちについて</h1>
+  <p>Unreal Engine 5を専門とする東京拠点の開発スタジオです。ゲームプレイの設計から実装・リリースまで、プロジェクトに深く関わることを大切にしています。</p>
+</div>
 
-この時期は今でも大切な記憶として残っています。
+<div class="members-heading">Members</div>
 
-## 大学時代の迷い
+<div class="members-grid">
 
-大学はITを専攻しました。ゲームは引退していましたが、あの頃の熱量を持ったままです。ただ、いざ授業が始まるとデータ構造、アルゴリズム、テーブルの正規化……退屈で頭が痛くなる内容が続きました。「自分はプログラミングに向いていないのかもしれない」と本気で思った時期もありました。
+  <a class="member-card" href="/marcode_aulinux/members/marcode/">
+    <img src="/marcode_aulinux/assets/img/members/marcode.svg" alt="marcode aulinux">
+    <div class="name">marcode aulinux</div>
+    <div class="role">Founder · Lead Engineer</div>
+  </a>
 
-## 今
-
-気づけばソフトウェア開発の仕事を12年続けています。それでも毎日何かを学んでいる感覚があります。現在は妻と2人の子供と一緒に暮らしています。趣味はファイナンス、ソフトウェア開発、そして子供たちと遊ぶことで、今は空き時間のほとんどをUnreal Engineで制作中のゲームプロジェクトに注いでいます。
-
-このブログはその過程で気づいたこと、試したこと、うまくいったこといかなかったことを記録する場所です。
+</div>

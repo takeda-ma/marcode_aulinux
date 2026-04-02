@@ -1,0 +1,36 @@
+---
+layout: page
+title: marcode aulinux
+permalink: /members/marcode/
+---
+
+<div style="display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:2rem;">
+  <img src="/marcode_aulinux/assets/img/members/marcode.svg"
+       alt="marcode aulinux"
+       style="width:120px;height:120px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(128,128,128,.2);">
+  <div>
+    <h2 style="margin:0 0 .3rem;">marcode aulinux</h2>
+    <p style="margin:0 0 .5rem;opacity:.6;font-size:.9rem;">Founder · Lead Engineer</p>
+    <p style="margin:0;opacity:.7;font-size:.9rem;">東京在住 · ソフトウェアエンジニア歴12年</p>
+  </div>
+</div>
+
+## はじまりは Ragnarok Online
+
+プログラミングに興味を持ったのは10歳のとき、Ragnarok Online をプレイしていた頃です。そこで [**OpenKore**](https://github.com/OpenKore/openkore) というオープンソースのオートメーションシステムに出会いました。キャラクターのグラインドやレベル上げを自動化するツールです。
+
+最初はただコンフィグファイルを読んで、自分のキャラが自律的に動くように少しずつ設定を弄るだけでした。その後、別キャラを24時間365日トレードさせるための簡単なマクロを書けるようになりました。当時の自分は「プログラミング」という言葉すら知らなかった。ただ、キャラクターが自分の代わりに動き続けるという感覚が、とにかく圧倒的に面白かったのです。
+
+そこから自分で試行錯誤するようになりました。システムをヘッドレスで動かす方法を調べ、ヘッドレスの方が処理が速いことに気づき、最終的には50〜100体ものボットを同時に走らせるようになりました。さらにボット同士がお互いにバフをかけ合い、パーティー全員が揃ってからグラインドを開始するようなオーケストレーションまで組んでいました。今思えばあれは立派な分散システムの原体験です。
+
+この時期は今でも大切な記憶として残っています。
+
+## 大学時代の迷い
+
+大学はITを専攻しました。ゲームは引退していましたが、あの頃の熱量を持ったままです。ただ、いざ授業が始まるとデータ構造、アルゴリズム、テーブルの正規化……退屈で頭が痛くなる内容が続きました。「自分はプログラミングに向いていないのかもしれない」と本気で思った時期もありました。
+
+## 今
+
+気づけばソフトウェア開発の仕事を12年続けています。それでも毎日何かを学んでいる感覚があります。現在は妻と2人の子供と一緒に暮らしています。趣味はファイナンス、ソフトウェア開発、そして子供たちと遊ぶことで、今は空き時間のほとんどをUnreal Engineで制作中のゲームプロジェクトに注いでいます。
+
+このブログはその過程で気づいたこと、試したこと、うまくいったこといかなかったことを記録する場所です。
