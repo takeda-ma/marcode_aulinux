@@ -222,22 +222,21 @@ order: 5
   <div class="sv-block-meta">
     <div class="category">Game Development</div>
     <h2>Unreal Engine 5<br>ゲーム開発</h2>
-    <p>UE5を用いたゲーム機能の設計・実装を担います。戦闘システム、アビリティ設計、NPCのAI行動、キャラクターパイプラインまで、リリースを見据えた品質でお届けします。要件定義から納品・保守までワンストップで対応可能です。</p>
+    <p>ゲームの企画・設計から実装・リリース後の保守まで、Unreal Engine 5を用いた開発をワンストップでお引き受けします。キャラクターの動き、敵のふるまい、戦闘の手触りなど、プレイヤーが実際に触れる体験をつくることを得意としています。</p>
     <ul class="sv-list">
-      <li>ゲームプレイシステム設計・実装（C++ / Blueprint）</li>
-      <li>Gameplay Ability System（GAS）を用いたスキル・バフ・デバフ設計</li>
-      <li>AI・NPCシステム（大規模NPC管理、コンパニオンAI）</li>
-      <li>キャラクター＆アニメーションパイプライン構築</li>
-      <li>リアルタイムパフォーマンス最適化</li>
-      <li>マルチプレイヤー対応・レプリケーション設計</li>
+      <li>ゲームプレイの設計と実装</li>
+      <li>キャラクターの動作・スキル・状態管理</li>
+      <li>敵・NPCの行動とAI</li>
+      <li>3Dキャラクターの制作と組み込み</li>
+      <li>動作の安定化とパフォーマンス改善</li>
+      <li>マルチプレイヤー対応</li>
     </ul>
     <div class="sv-tags">
       <span class="sv-tag">Unreal Engine 5</span>
-      <span class="sv-tag">C++</span>
-      <span class="sv-tag">Blueprints</span>
-      <span class="sv-tag">GAS</span>
+      <span class="sv-tag">ゲームプレイ</span>
       <span class="sv-tag">AI</span>
-      <span class="sv-tag">Multiplayer</span>
+      <span class="sv-tag">キャラクター</span>
+      <span class="sv-tag">マルチプレイヤー</span>
     </div>
   </div>
 </div>
@@ -250,18 +249,17 @@ order: 5
   <div class="sv-block-meta">
     <div class="category">Consulting</div>
     <h2>UE5<br>テクニカルコンサルティング</h2>
-    <p>社内でUE5開発を進めているチーム・スタジオを対象に、技術的な課題解決と意思決定をサポートします。アーキテクチャ設計の相談からコードレビュー、特定システムの改善提案まで、短期集中型のエンゲージメントで対応します。</p>
+    <p>社内でUE5開発を進めているチームやスタジオの技術的な悩みに寄り添います。「この方向で進めて大丈夫か」「なぜうまく動かないのか」といった問いに対して、経験をもとに率直な意見をお伝えします。短期集中型のご相談から継続的なサポートまで柔軟に対応します。</p>
     <ul class="sv-list">
-      <li>アーキテクチャレビュー・設計相談</li>
-      <li>コードレビュー・品質改善提案</li>
-      <li>GAS・AIシステムの設計指導</li>
-      <li>パフォーマンスボトルネック調査・改善</li>
-      <li>技術選定・第三者評価</li>
+      <li>設計・実装方針のレビューと改善提案</li>
+      <li>開発中の問題調査とアドバイス</li>
+      <li>技術選定における第三者意見</li>
+      <li>パフォーマンス・品質の改善相談</li>
     </ul>
     <div class="sv-tags">
       <span class="sv-tag">コンサルティング</span>
-      <span class="sv-tag">アーキテクチャ</span>
-      <span class="sv-tag">コードレビュー</span>
+      <span class="sv-tag">設計レビュー</span>
+      <span class="sv-tag">問題解決</span>
       <span class="sv-tag">UE5</span>
     </div>
   </div>
