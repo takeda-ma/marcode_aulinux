@@ -35,17 +35,15 @@ order: 4
 
 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 mb-4">
 
-  <div class="col">
-    <a class="member-card-link" href="{{ '/members/johji/' | relative_url }}">
-      <div class="card h-100 text-center border rounded-3 p-3">
-        <div class="card-body p-0 pt-2">
-          <img src="/assets/img/members/johji.svg" alt="Johji"
-               class="rounded-circle member-avatar mb-3">
-          <h6 class="card-title fw-bold mb-1">Johji</h6>
-          <p class="card-text text-muted small mb-0">Founder · Lead Engineer</p>
-        </div>
+  <a class="col member-card-link" href="{{ '/members/johji/' | relative_url }}">
+    <div class="card h-100 text-center border rounded-3 p-3">
+      <div class="card-body p-0 pt-2">
+        <img src="/assets/img/members/johji.svg" alt="Johji"
+             class="rounded-circle member-avatar mb-3">
+        <h6 class="card-title fw-bold mb-1">Johji</h6>
+        <p class="card-text text-muted small mb-0">Founder · Lead Engineer</p>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 
 </div>
