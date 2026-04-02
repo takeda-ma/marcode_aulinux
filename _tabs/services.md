@@ -103,47 +103,25 @@ order: 5
 
   <div class="service-card">
     <div class="icon"><i class="fas fa-gamepad"></i></div>
-    <h3>Gameplay Systems</h3>
-    <p>End-to-end feature development in UE5 — combat systems, input handling, game modes, and the glue code that makes everything feel tight.</p>
+    <h3>Unreal Engine 5 Game Development</h3>
+    <p>End-to-end UE5 feature development — gameplay systems, combat, AI & NPC behaviour, ability systems (GAS), character pipelines, and real-time performance optimisation.</p>
     <div class="service-tags">
       <span class="service-tag">Unreal Engine 5</span>
       <span class="service-tag">C++</span>
       <span class="service-tag">Blueprints</span>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-bolt"></i></div>
-    <h3>Gameplay Ability System (GAS)</h3>
-    <p>Scalable ability frameworks — skills, buffs, debuffs, targeting pipelines, and proc systems built to work for both players and AI-controlled characters.</p>
-    <div class="service-tags">
       <span class="service-tag">GAS</span>
-      <span class="service-tag">Abilities</span>
-      <span class="service-tag">Targeting</span>
-      <span class="service-tag">Multiplayer</span>
+      <span class="service-tag">AI</span>
     </div>
   </div>
 
   <div class="service-card">
-    <div class="icon"><i class="fas fa-robot"></i></div>
-    <h3>AI & NPC Systems</h3>
-    <p>Custom AI controllers, score-based decision systems, and enemy/companion behaviour that scales to large NPC counts without killing frame time.</p>
+    <div class="icon"><i class="fas fa-comments"></i></div>
+    <h3>UE5 Technical Consulting</h3>
+    <p>Architecture reviews, code audits, and technical guidance for teams working with Unreal Engine 5. Available for short engagements focused on specific systems or design decisions.</p>
     <div class="service-tags">
-      <span class="service-tag">AI Controllers</span>
-      <span class="service-tag">Custom AI</span>
-      <span class="service-tag">NPC</span>
-      <span class="service-tag">Performance</span>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-users"></i></div>
-    <h3>Character & Animation Integration</h3>
-    <p>Modular character pipelines connecting Blender and Marvelous Designer to UE5 — skeletal mesh setup, rigging, skinning, and animation blueprint wiring.</p>
-    <div class="service-tags">
-      <span class="service-tag">Blender</span>
-      <span class="service-tag">Marvelous Designer</span>
-      <span class="service-tag">Rigging</span>
+      <span class="service-tag">Consulting</span>
+      <span class="service-tag">Architecture</span>
+      <span class="service-tag">Code Review</span>
       <span class="service-tag">UE5</span>
     </div>
   </div>
