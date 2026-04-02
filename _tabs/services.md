@@ -6,83 +6,177 @@ order: 5
 ---
 
 <style>
-.services-hero {
+/* ── Hero ── */
+.sv-hero {
   text-align: center;
-  padding: 2.5rem 1rem 2rem;
+  padding: 3rem 1rem 2.5rem;
+  border-bottom: 1px solid rgba(128,128,128,.15);
+  margin-bottom: 3rem;
 }
-.services-hero h1 {
-  font-size: 2rem;
-  font-weight: 700;
+.sv-hero .label {
+  font-size: .75rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .5;
   margin-bottom: .6rem;
 }
-.services-hero p {
-  opacity: .7;
-  max-width: 520px;
+.sv-hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.sv-hero p {
+  max-width: 560px;
   margin: 0 auto;
-  line-height: 1.7;
+  opacity: .7;
+  line-height: 1.8;
+  font-size: .95rem;
 }
 
-.services-grid {
+/* ── Service blocks ── */
+.sv-block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.4rem;
-  margin: 2.5rem 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 4rem;
+  align-items: start;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(128,128,128,.1);
 }
-.service-card {
-  border: 1px solid rgba(128,128,128,.2);
-  border-radius: 12px;
-  padding: 1.6rem 1.4rem;
-  background: var(--card-bg, rgba(255,255,255,.03));
-  transition: border-color .2s, transform .2s;
+.sv-block:last-of-type { border-bottom: none; }
+.sv-block.reverse { direction: rtl; }
+.sv-block.reverse > * { direction: ltr; }
+
+@media (max-width: 768px) {
+  .sv-block, .sv-block.reverse { grid-template-columns: 1fr; direction: ltr; gap: 1.5rem; }
 }
-.service-card:hover {
-  border-color: var(--link-color, #6ea8fe);
-  transform: translateY(-3px);
-}
-.service-card .icon {
-  font-size: 1.8rem;
-  margin-bottom: .9rem;
+
+.sv-block-icon {
+  font-size: 3.5rem;
   color: var(--link-color, #6ea8fe);
+  margin-bottom: 1rem;
+  opacity: .85;
 }
-.service-card h3 {
-  font-size: 1.05rem;
-  font-weight: 700;
+.sv-block-meta .category {
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--link-color, #6ea8fe);
   margin-bottom: .5rem;
 }
-.service-card p {
-  font-size: .88rem;
-  opacity: .7;
-  line-height: 1.65;
-  margin: 0;
+.sv-block-meta h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.35;
 }
-.service-tags {
+.sv-block-meta p {
+  font-size: .9rem;
+  opacity: .72;
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+}
+.sv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4rem;
+}
+.sv-list li {
+  font-size: .88rem;
+  opacity: .75;
+  padding: .3rem 0;
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.6;
+}
+.sv-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  opacity: .4;
+}
+.sv-tags {
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
-  margin-top: .9rem;
 }
-.service-tag {
-  font-size: .72rem;
-  padding: .2rem .55rem;
+.sv-tag {
+  font-size: .71rem;
+  padding: .2rem .6rem;
   border-radius: 999px;
   border: 1px solid rgba(128,128,128,.3);
-  opacity: .75;
+  opacity: .7;
 }
 
-.services-cta {
+/* ── Philosophy strip ── */
+.sv-philosophy {
+  background: rgba(128,128,128,.05);
+  border-radius: 12px;
+  padding: 2rem 2rem;
+  margin: 3rem 0;
   text-align: center;
-  padding: 2rem 1rem 1rem;
-  border-top: 1px solid rgba(128,128,128,.15);
-  margin-top: 1rem;
 }
-.services-cta p {
+.sv-philosophy h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
+.sv-philosophy p {
+  font-size: .9rem;
+  opacity: .7;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ── Process ── */
+.sv-process {
+  margin: 3rem 0;
+}
+.sv-process h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sv-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+.sv-step {
+  text-align: center;
+  padding: 1.2rem .8rem;
+  border: 1px solid rgba(128,128,128,.15);
+  border-radius: 10px;
+}
+.sv-step .num {
+  font-size: .7rem;
+  letter-spacing: .1em;
+  color: var(--link-color, #6ea8fe);
+  margin-bottom: .4rem;
+}
+.sv-step .name {
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+/* ── CTA ── */
+.sv-cta {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-top: 1px solid rgba(128,128,128,.15);
+  margin-top: 2rem;
+}
+.sv-cta p {
   opacity: .7;
   margin-bottom: 1.1rem;
   font-size: .95rem;
+  line-height: 1.7;
 }
-.services-cta a {
+.sv-cta a {
   display: inline-block;
-  padding: .6rem 1.8rem;
+  padding: .65rem 2rem;
   border-radius: 999px;
   background: var(--link-color, #6ea8fe);
   color: #fff;
@@ -91,44 +185,104 @@ order: 5
   text-decoration: none;
   transition: opacity .15s;
 }
-.services-cta a:hover { opacity: .8; color: #fff; }
+.sv-cta a:hover { opacity: .8; color: #fff; }
 </style>
 
-<div class="services-hero">
-  <h1>Services</h1>
-  <p>We are a specialist Unreal Engine 5 dev shop. We partner with studios and teams that need deep technical execution — not just delivery.</p>
+<!-- Hero -->
+<div class="sv-hero">
+  <div class="label">Services</div>
+  <h1>見て、考えて、一緒につくる。</h1>
+  <p>私たちはUnreal Engine 5を専門とする開発スタジオです。ゲームの企画段階から実装・リリース後の改善まで、開発パートナーとしてプロジェクトに寄り添います。単なる受託開発ではなく、価値を生み出す仕組みをともに考えることが私たちのスタンスです。</p>
 </div>
 
-<div class="services-grid">
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-gamepad"></i></div>
-    <h3>Unreal Engine 5 Game Development</h3>
-    <p>We build and ship UE5 game features end-to-end — gameplay systems, combat, AI & NPC behaviour, ability systems (GAS), character pipelines, and real-time performance optimisation.</p>
-    <div class="service-tags">
-      <span class="service-tag">Unreal Engine 5</span>
-      <span class="service-tag">C++</span>
-      <span class="service-tag">Blueprints</span>
-      <span class="service-tag">GAS</span>
-      <span class="service-tag">AI</span>
+<!-- Service 1 -->
+<div class="sv-block">
+  <div class="sv-block-visual">
+    <div class="sv-block-icon"><i class="fas fa-gamepad"></i></div>
+  </div>
+  <div class="sv-block-meta">
+    <div class="category">Game Development</div>
+    <h2>Unreal Engine 5<br>ゲーム開発</h2>
+    <p>UE5を用いたゲーム機能の設計・実装を担います。戦闘システム、アビリティ設計、NPCのAI行動、キャラクターパイプラインまで、リリースを見据えた品質でお届けします。要件定義から納品・保守までワンストップで対応可能です。</p>
+    <ul class="sv-list">
+      <li>ゲームプレイシステム設計・実装（C++ / Blueprint）</li>
+      <li>Gameplay Ability System（GAS）を用いたスキル・バフ・デバフ設計</li>
+      <li>AI・NPCシステム（大規模NPC管理、コンパニオンAI）</li>
+      <li>キャラクター＆アニメーションパイプライン構築</li>
+      <li>リアルタイムパフォーマンス最適化</li>
+      <li>マルチプレイヤー対応・レプリケーション設計</li>
+    </ul>
+    <div class="sv-tags">
+      <span class="sv-tag">Unreal Engine 5</span>
+      <span class="sv-tag">C++</span>
+      <span class="sv-tag">Blueprints</span>
+      <span class="sv-tag">GAS</span>
+      <span class="sv-tag">AI</span>
+      <span class="sv-tag">Multiplayer</span>
     </div>
   </div>
-
-  <div class="service-card">
-    <div class="icon"><i class="fas fa-comments"></i></div>
-    <h3>UE5 Technical Consulting</h3>
-    <p>Our team provides architecture reviews, code audits, and hands-on technical guidance for studios working with Unreal Engine 5 — whether you need a second opinion or an embedded technical lead.</p>
-    <div class="service-tags">
-      <span class="service-tag">Consulting</span>
-      <span class="service-tag">Architecture</span>
-      <span class="service-tag">Code Review</span>
-      <span class="service-tag">UE5</span>
-    </div>
-  </div>
-
 </div>
 
-<div class="services-cta">
-  <p>Have a project in mind? Let's talk about what we can build together.</p>
-  <a href="/marcode_aulinux/contact/">Get in touch</a>
+<!-- Service 2 -->
+<div class="sv-block reverse">
+  <div class="sv-block-visual">
+    <div class="sv-block-icon"><i class="fas fa-comments"></i></div>
+  </div>
+  <div class="sv-block-meta">
+    <div class="category">Consulting</div>
+    <h2>UE5<br>テクニカルコンサルティング</h2>
+    <p>社内でUE5開発を進めているチーム・スタジオを対象に、技術的な課題解決と意思決定をサポートします。アーキテクチャ設計の相談からコードレビュー、特定システムの改善提案まで、短期集中型のエンゲージメントで対応します。</p>
+    <ul class="sv-list">
+      <li>アーキテクチャレビュー・設計相談</li>
+      <li>コードレビュー・品質改善提案</li>
+      <li>GAS・AIシステムの設計指導</li>
+      <li>パフォーマンスボトルネック調査・改善</li>
+      <li>技術選定・第三者評価</li>
+    </ul>
+    <div class="sv-tags">
+      <span class="sv-tag">コンサルティング</span>
+      <span class="sv-tag">アーキテクチャ</span>
+      <span class="sv-tag">コードレビュー</span>
+      <span class="sv-tag">UE5</span>
+    </div>
+  </div>
+</div>
+
+<!-- Philosophy -->
+<div class="sv-philosophy">
+  <h3>私たちの考え方</h3>
+  <p>技術力だけでなく、プロジェクトの目標と課題を深く理解した上で開発に臨みます。クライアントとともに考え、最適な解を提案する——それが私たちの開発スタイルです。</p>
+</div>
+
+<!-- Process -->
+<div class="sv-process">
+  <h2>進め方</h2>
+  <div class="sv-steps">
+    <div class="sv-step">
+      <div class="num">STEP 01</div>
+      <div class="name">ヒアリング</div>
+    </div>
+    <div class="sv-step">
+      <div class="num">STEP 02</div>
+      <div class="name">要件定義</div>
+    </div>
+    <div class="sv-step">
+      <div class="num">STEP 03</div>
+      <div class="name">設計・実装</div>
+    </div>
+    <div class="sv-step">
+      <div class="num">STEP 04</div>
+      <div class="name">テスト・QA</div>
+    </div>
+    <div class="sv-step">
+      <div class="num">STEP 05</div>
+      <div class="name">納品・保守</div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="sv-cta">
+  <p>プロジェクトのご相談、お見積もりのご依頼はお気軽にどうぞ。<br>まずはお話を聞かせてください。</p>
+  <a href="/marcode_aulinux/contact/">お問い合わせ</a>
 </div>
