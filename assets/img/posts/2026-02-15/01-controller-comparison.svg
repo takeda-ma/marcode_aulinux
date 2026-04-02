@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="36" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">AI Controller Approach Comparison</text>
+
+  <!-- LEFT: Player controller on AI -->
+  <rect x="40" y="56" width="330" height="256" rx="8" fill="#3a2020"/>
+  <text x="205" y="82" text-anchor="middle" fill="#ff9a7a" font-size="13" font-weight="bold">Player Controller on AI</text>
+
+  <rect x="60" y="96" width="290" height="32" rx="4" fill="#2a1a1a"/>
+  <text x="205" y="117" text-anchor="middle" fill="#7affc0" font-size="11">✓  Abilities work immediately</text>
+
+  <rect x="60" y="138" width="290" height="32" rx="4" fill="#2a1a1a"/>
+  <text x="205" y="159" text-anchor="middle" fill="#ff6060" font-size="11">✗  Camera · Input · UI overhead always present</text>
+
+  <rect x="60" y="180" width="290" height="32" rx="4" fill="#2a1a1a"/>
+  <text x="205" y="201" text-anchor="middle" fill="#ff6060" font-size="11">✗  AI must "fake" button presses</text>
+
+  <rect x="60" y="222" width="290" height="32" rx="4" fill="#2a1a1a"/>
+  <text x="205" y="243" text-anchor="middle" fill="#ff6060" font-size="11">✗  Client prediction leaks into AI logic</text>
+
+  <rect x="60" y="264" width="290" height="32" rx="4" fill="#2a1a1a"/>
+  <text x="205" y="285" text-anchor="middle" fill="#ff6060" font-size="11">✗  Input-driven combos hard to drive from AI</text>
+
+  <!-- RIGHT: Dedicated AI controller -->
+  <rect x="430" y="56" width="330" height="256" rx="8" fill="#1a2a1a"/>
+  <text x="595" y="82" text-anchor="middle" fill="#7affc0" font-size="13" font-weight="bold">Dedicated AI Controller ✓</text>
+
+  <rect x="450" y="96" width="290" height="32" rx="4" fill="#0a1a0a"/>
+  <text x="595" y="117" text-anchor="middle" fill="#7affc0" font-size="11">✓  Server-only · no prediction overhead</text>
+
+  <rect x="450" y="138" width="290" height="32" rx="4" fill="#0a1a0a"/>
+  <text x="595" y="159" text-anchor="middle" fill="#7affc0" font-size="11">✓  AI activates abilities directly via ASC</text>
+
+  <rect x="450" y="180" width="290" height="32" rx="4" fill="#0a1a0a"/>
+  <text x="595" y="201" text-anchor="middle" fill="#7affc0" font-size="11">✓  Score-based decisions stay clean</text>
+
+  <rect x="450" y="222" width="290" height="32" rx="4" fill="#0a1a0a"/>
+  <text x="595" y="243" text-anchor="middle" fill="#7affc0" font-size="11">✓  No input simulation layer</text>
+
+  <rect x="450" y="264" width="290" height="32" rx="4" fill="#0a1a0a"/>
+  <text x="595" y="285" text-anchor="middle" fill="#ff9a7a" font-size="11">△  Abilities need a one-time refactor</text>
+
+  <text x="400" y="326" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with UE5 controller class hierarchy screenshot ]</text>
+</svg>

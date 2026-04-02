@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="380" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="34" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Grimoire Overclock — Full Activation Flow</text>
+
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+    <marker id="ap" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#c0a0ff"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1: Player activates buff -->
+  <rect x="30" y="58" width="180" height="52" rx="6" fill="#2a3a5a"/>
+  <text x="120" y="82" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">Ability Button</text>
+  <text x="120" y="100" text-anchor="middle" fill="#909ab0" font-size="11">Player activates buff</text>
+
+  <line x1="214" y1="84" x2="254" y2="84" stroke="#e0e0e0" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Step 2: Buff GE applied -->
+  <rect x="258" y="58" width="200" height="52" rx="6" fill="#3a2a5a"/>
+  <text x="358" y="80" text-anchor="middle" fill="#c0a0ff" font-size="12" font-weight="bold">Buff Applied to Self</text>
+  <text x="358" y="98" text-anchor="middle" fill="#909ab0" font-size="11">LMB overridden · spells granted · aura VFX</text>
+
+  <line x1="462" y1="84" x2="502" y2="84" stroke="#e0e0e0" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Step 3: Player attacks -->
+  <rect x="506" y="58" width="180" height="52" rx="6" fill="#2a3a5a"/>
+  <text x="596" y="82" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">LMB → Attack</text>
+  <text x="596" y="100" text-anchor="middle" fill="#909ab0" font-size="11">Overclock combo fires</text>
+
+  <!-- Down arrow from attack -->
+  <line x1="596" y1="114" x2="596" y2="154" stroke="#e0e0e0" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Step 4: Hit processed -->
+  <rect x="486" y="158" width="220" height="66" rx="6" fill="#2a4a3a"/>
+  <text x="596" y="180" text-anchor="middle" fill="#7affc0" font-size="12" font-weight="bold">OnComboHitApplied()</text>
+  <text x="596" y="198" text-anchor="middle" fill="#c0c8e0" font-size="11">─ Drain 50 mana from self</text>
+  <text x="596" y="214" text-anchor="middle" fill="#c0c8e0" font-size="11">─ Roll proc chance (25%)</text>
+
+  <!-- Arrow: no proc -->
+  <line x1="486" y1="195" x2="406" y2="195" stroke="#606080" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="446" y="187" text-anchor="middle" fill="#606080" font-size="10">no proc</text>
+  <rect x="296" y="178" width="106" height="34" rx="4" fill="#1a1a1a"/>
+  <text x="349" y="200" text-anchor="middle" fill="#606060" font-size="11">Continue attack</text>
+
+  <!-- Arrow: proc fires -->
+  <line x1="596" y1="228" x2="596" y2="268" stroke="#c0a0ff" stroke-width="2" marker-end="url(#ap)"/>
+  <text x="616" y="252" fill="#c0a0ff" font-size="10">proc!</text>
+
+  <!-- Step 5: Autocast -->
+  <rect x="446" y="272" width="300" height="72" rx="6" fill="#3a1a3a"/>
+  <text x="596" y="296" text-anchor="middle" fill="#c0a0ff" font-size="12" font-weight="bold">Autocast Fires on Hit Target</text>
+  <text x="596" y="314" text-anchor="middle" fill="#c0c8e0" font-size="11">Random pick: Fireball or LightningStrike</text>
+  <text x="596" y="330" text-anchor="middle" fill="#c0c8e0" font-size="11">Damage applied · Impact VFX spawned</text>
+
+  <!-- Buff expiry note -->
+  <rect x="30" y="270" width="260" height="72" rx="6" fill="#2a2a2a"/>
+  <text x="160" y="294" text-anchor="middle" fill="#909ab0" font-size="12" font-weight="bold">Buff Expires</text>
+  <text x="160" y="312" text-anchor="middle" fill="#606080" font-size="11">LMB restored to original combo</text>
+  <text x="160" y="328" text-anchor="middle" fill="#606080" font-size="11">Granted spells removed · aura VFX off</text>
+
+  <text x="400" y="368" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with in-game ability activation + proc screenshot ]</text>
+</svg>

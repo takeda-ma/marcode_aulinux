@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="38" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Step 4 — Blender Retopology Finish (Plugin-assisted)</text>
+
+  <!-- Import -->
+  <rect x="40" y="80" width="150" height="110" rx="8" fill="#2a3a5a"/>
+  <text x="115" y="106" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">Import to Blender</text>
+  <text x="115" y="128" text-anchor="middle" fill="#c0c8e0" font-size="11">Rough retopo</text>
+  <text x="115" y="148" text-anchor="middle" fill="#c0c8e0" font-size="11">from MD</text>
+
+  <line x1="194" y1="135" x2="254" y2="135" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a4)"/>
+  <defs>
+    <marker id="a4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Plugin box -->
+  <rect x="258" y="65" width="210" height="145" rx="8" fill="#3a3a2a"/>
+  <text x="363" y="93" text-anchor="middle" fill="#ffdd7a" font-size="13" font-weight="bold">Retopo Plugin</text>
+  <text x="363" y="115" text-anchor="middle" fill="#c0c8e0" font-size="11">Automate &amp; assist</text>
+  <text x="363" y="135" text-anchor="middle" fill="#c0c8e0" font-size="11">retopology pass</text>
+  <text x="363" y="158" text-anchor="middle" fill="#909ab0" font-size="11">Proper edge flow</text>
+  <text x="363" y="178" text-anchor="middle" fill="#909ab0" font-size="11">for game-ready mesh</text>
+
+  <line x1="472" y1="135" x2="532" y2="135" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a4b)"/>
+  <defs>
+    <marker id="a4b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Result -->
+  <rect x="536" y="80" width="210" height="110" rx="8" fill="#2a4a3a"/>
+  <text x="641" y="108" text-anchor="middle" fill="#7affc0" font-size="12" font-weight="bold">Clean Mesh</text>
+  <text x="641" y="130" text-anchor="middle" fill="#c0c8e0" font-size="11">Optimized poly density</text>
+  <text x="641" y="150" text-anchor="middle" fill="#c0c8e0" font-size="11">RT-ready topology</text>
+  <text x="641" y="170" text-anchor="middle" fill="#909ab0" font-size="11">Faster than full manual</text>
+
+  <text x="400" y="270" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with Blender retopo plugin viewport screenshot ]</text>
+</svg>

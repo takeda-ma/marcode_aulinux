@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="40" text-anchor="middle" fill="#e0e0e0" font-size="18" font-weight="bold">UE5 Modular Character Slot System</text>
+
+  <!-- Skeleton root -->
+  <rect x="320" y="70" width="160" height="44" rx="6" fill="#4a4a7a"/>
+  <text x="400" y="97" text-anchor="middle" fill="#e0e0e0" font-size="13">Skeleton Root</text>
+
+  <!-- Lines down -->
+  <line x1="400" y1="114" x2="400" y2="140" stroke="#606080" stroke-width="1.5"/>
+  <line x1="180" y1="140" x2="620" y2="140" stroke="#606080" stroke-width="1.5"/>
+  <line x1="180" y1="140" x2="180" y2="170" stroke="#606080" stroke-width="1.5"/>
+  <line x1="340" y1="140" x2="340" y2="170" stroke="#606080" stroke-width="1.5"/>
+  <line x1="460" y1="140" x2="460" y2="170" stroke="#606080" stroke-width="1.5"/>
+  <line x1="620" y1="140" x2="620" y2="170" stroke="#606080" stroke-width="1.5"/>
+
+  <!-- Slots -->
+  <rect x="110" y="170" width="140" height="44" rx="6" fill="#2a5a8a"/>
+  <text x="180" y="197" text-anchor="middle" fill="#e0e0e0" font-size="12">Head Slot</text>
+
+  <rect x="270" y="170" width="140" height="44" rx="6" fill="#2a5a8a"/>
+  <text x="340" y="197" text-anchor="middle" fill="#e0e0e0" font-size="12">Body Slot</text>
+
+  <rect x="390" y="170" width="140" height="44" rx="6" fill="#2a5a8a"/>
+  <text x="460" y="197" text-anchor="middle" fill="#e0e0e0" font-size="12">Hair Slot (VRoid)</text>
+
+  <rect x="550" y="170" width="140" height="44" rx="6" fill="#2a5a8a"/>
+  <text x="620" y="197" text-anchor="middle" fill="#e0e0e0" font-size="12">Clothing Slot</text>
+
+  <!-- Notes -->
+  <text x="180" y="240" text-anchor="middle" fill="#8080b0" font-size="11">Base Head</text>
+  <text x="340" y="240" text-anchor="middle" fill="#8080b0" font-size="11">Base Body</text>
+  <text x="460" y="240" text-anchor="middle" fill="#8080b0" font-size="11">Swappable</text>
+  <text x="620" y="240" text-anchor="middle" fill="#8080b0" font-size="11">Swappable</text>
+
+  <text x="110" y="285" fill="#606060" font-size="11">Simple prototype path →</text>
+  <text x="110" y="300" fill="#606060" font-size="11">Attach SkeletalMesh per slot</text>
+  <text x="110" y="315" fill="#606060" font-size="11">Upgrade to MetaHuman-style later if needed</text>
+
+  <text x="400" y="335" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with actual UE5 Blueprint / outliner screenshot ]</text>
+</svg>

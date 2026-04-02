@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="36" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Result — One Ability Class, Two Controllers</text>
+
+  <defs>
+    <marker id="up" markerWidth="8" markerHeight="8" refX="3" refY="6" orient="auto">
+      <path d="M0,6 L6,6 L3,0 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Base ability -->
+  <rect x="270" y="56" width="260" height="72" rx="8" fill="#2a3a5a"/>
+  <text x="400" y="84" text-anchor="middle" fill="#7aadff" font-size="14" font-weight="bold">GA_FocusRoll  (base C++)</text>
+  <text x="400" y="106" text-anchor="middle" fill="#909ab0" font-size="11">Virtual hooks with safe defaults</text>
+  <text x="400" y="122" text-anchor="middle" fill="#909ab0" font-size="11">No PlayerController references</text>
+
+  <!-- Inheritance lines up -->
+  <line x1="320" y1="56" x2="180" y2="172" stroke="#e0e0e0" stroke-width="1.5"/>
+  <line x1="480" y1="56" x2="620" y2="172" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- Player child -->
+  <rect x="60" y="172" width="240" height="88" rx="8" fill="#1a3a5a"/>
+  <text x="180" y="198" text-anchor="middle" fill="#7aadff" font-size="13" font-weight="bold">BP_GA_FocusRoll_Player</text>
+  <text x="180" y="218" text-anchor="middle" fill="#c0c8e0" font-size="11">Overrides roll direction hook</text>
+  <text x="180" y="236" text-anchor="middle" fill="#c0c8e0" font-size="11">→ reads stick input from PC</text>
+  <text x="180" y="254" text-anchor="middle" fill="#909ab0" font-size="10">Granted to: Player Character</text>
+
+  <!-- AI uses base -->
+  <rect x="500" y="172" width="240" height="88" rx="8" fill="#1a3a2a"/>
+  <text x="620" y="198" text-anchor="middle" fill="#7affc0" font-size="13" font-weight="bold">GA_FocusRoll  (base)</text>
+  <text x="620" y="218" text-anchor="middle" fill="#c0c8e0" font-size="11">No override — uses defaults</text>
+  <text x="620" y="236" text-anchor="middle" fill="#c0c8e0" font-size="11">→ falls back to move vector</text>
+  <text x="620" y="254" text-anchor="middle" fill="#909ab0" font-size="10">Granted to: Companion / AI</text>
+
+  <!-- No duplicate label -->
+  <rect x="270" y="278" width="260" height="28" rx="6" fill="#1a1a1a"/>
+  <text x="400" y="297" text-anchor="middle" fill="#ffdd7a" font-size="12">No GA_AI_FocusRoll duplicate needed ✓</text>
+
+  <text x="400" y="316" text-anchor="middle" fill="#606080" font-size="10">[ placeholder — replace with UE5 ability class hierarchy / Blueprint screenshot ]</text>
+</svg>

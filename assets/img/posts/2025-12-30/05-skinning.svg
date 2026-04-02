@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="38" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Step 5 — Skinning the Garment to Avatar</text>
+
+  <!-- Avatar rig -->
+  <rect x="60" y="75" width="170" height="140" rx="8" fill="#2a3a5a"/>
+  <text x="145" y="103" text-anchor="middle" fill="#7aadff" font-size="13" font-weight="bold">Avatar Armature</text>
+  <text x="145" y="127" text-anchor="middle" fill="#c0c8e0" font-size="11">Existing weight data</text>
+  <text x="145" y="147" text-anchor="middle" fill="#909ab0" font-size="11">used as transfer source</text>
+
+  <!-- Arrow -->
+  <line x1="234" y1="145" x2="304" y2="145" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a5)"/>
+  <text x="270" y="136" text-anchor="middle" fill="#909ab0" font-size="10">Transfer</text>
+  <defs>
+    <marker id="a5" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Weight transfer -->
+  <rect x="308" y="65" width="210" height="165" rx="8" fill="#3a2a5a"/>
+  <text x="413" y="93" text-anchor="middle" fill="#c0a0ff" font-size="13" font-weight="bold">Weight Transfer</text>
+  <text x="413" y="117" text-anchor="middle" fill="#c0c8e0" font-size="11">Auto transfer from body</text>
+  <text x="413" y="137" text-anchor="middle" fill="#c0c8e0" font-size="11">as base weight</text>
+  <text x="413" y="162" text-anchor="middle" fill="#909ab0" font-size="11">Then: manual fine-tuning</text>
+  <text x="413" y="182" text-anchor="middle" fill="#909ab0" font-size="11">Focus on joint areas</text>
+  <text x="413" y="202" text-anchor="middle" fill="#e05c5c" font-size="11">⚠ Check deformation</text>
+
+  <!-- Arrow -->
+  <line x1="522" y1="145" x2="592" y2="145" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a5b)"/>
+  <defs>
+    <marker id="a5b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Result -->
+  <rect x="596" y="80" width="150" height="130" rx="8" fill="#2a4a3a"/>
+  <text x="671" y="108" text-anchor="middle" fill="#7affc0" font-size="12" font-weight="bold">Skinned Garment</text>
+  <text x="671" y="132" text-anchor="middle" fill="#c0c8e0" font-size="11">Bound to armature</text>
+  <text x="671" y="152" text-anchor="middle" fill="#c0c8e0" font-size="11">Joints deform</text>
+  <text x="671" y="172" text-anchor="middle" fill="#c0c8e0" font-size="11">naturally</text>
+
+  <text x="400" y="270" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with Blender weight paint / pose mode screenshot ]</text>
+</svg>

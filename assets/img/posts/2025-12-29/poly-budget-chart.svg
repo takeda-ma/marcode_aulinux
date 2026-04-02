@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="40" text-anchor="middle" fill="#e0e0e0" font-size="18" font-weight="bold">Polygon Budget Overview</text>
+
+  <!-- Normal character bar -->
+  <text x="30" y="100" fill="#a0a0c0" font-size="13">Normal Characters (Player / NPC)</text>
+  <rect x="30" y="110" width="220" height="36" rx="4" fill="#4a90d9"/>
+  <text x="260" y="133" fill="#e0e0e0" font-size="13">15,000 – 30,000 tris</text>
+
+  <!-- Boss bar -->
+  <text x="30" y="190" fill="#a0a0c0" font-size="13">Non-human Boss (Robot / Monster)</text>
+  <rect x="30" y="200" width="600" height="36" rx="4" fill="#e05c5c"/>
+  <text x="640" y="223" fill="#e0e0e0" font-size="13">200,000 – 300,000 tris</text>
+
+  <text x="400" y="280" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with actual comparison render ]</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="34" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">LMB Ability Override — Before vs During Buff</text>
+
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- BEFORE -->
+  <text x="200" y="68" text-anchor="middle" fill="#909ab0" font-size="13">Before Buff</text>
+  <rect x="80" y="80" width="120" height="40" rx="6" fill="#2a3a5a"/>
+  <text x="140" y="105" text-anchor="middle" fill="#7aadff" font-size="12">LMB Input</text>
+  <line x1="204" y1="100" x2="264" y2="100" stroke="#e0e0e0" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="268" y="80" width="160" height="40" rx="6" fill="#2a3a5a"/>
+  <text x="348" y="105" text-anchor="middle" fill="#7aadff" font-size="12">GA_FocusCombo</text>
+  <text x="348" y="140" text-anchor="middle" fill="#606080" font-size="11">normal melee, no extra effects</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="162" x2="760" y2="162" stroke="#303050" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- DURING BUFF -->
+  <text x="200" y="186" text-anchor="middle" fill="#c0a0ff" font-size="13">During Buff</text>
+  <rect x="80" y="198" width="120" height="40" rx="6" fill="#3a2a5a"/>
+  <text x="140" y="223" text-anchor="middle" fill="#c0a0ff" font-size="12">LMB Input</text>
+  <line x1="204" y1="218" x2="264" y2="218" stroke="#c0a0ff" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="268" y="198" width="220" height="40" rx="6" fill="#3a1a4a"/>
+  <text x="378" y="216" text-anchor="middle" fill="#c0a0ff" font-size="12" font-weight="bold">GA_GrimoireFocusCombo</text>
+  <text x="378" y="234" text-anchor="middle" fill="#909ab0" font-size="11">(inherits full combo · adds proc logic)</text>
+
+  <!-- Extra effects -->
+  <line x1="492" y1="218" x2="552" y2="198" stroke="#e05c5c" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="492" y1="218" x2="552" y2="238" stroke="#c0a0ff" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="556" y="184" width="160" height="30" rx="4" fill="#3a1a1a"/>
+  <text x="636" y="204" text-anchor="middle" fill="#ff9a7a" font-size="11">─50 mana per swing</text>
+  <rect x="556" y="224" width="160" height="30" rx="4" fill="#2a1a3a"/>
+  <text x="636" y="244" text-anchor="middle" fill="#c0a0ff" font-size="11">25% → autocast proc</text>
+
+  <text x="400" y="270" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with GAS ability slot / input override Blueprint screenshot ]</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="38" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Step 3 — MD Retopology (rough base)</text>
+
+  <!-- High poly -->
+  <rect x="60" y="80" width="180" height="120" rx="8" fill="#4a2a2a"/>
+  <text x="150" y="108" text-anchor="middle" fill="#ff9a7a" font-size="13" font-weight="bold">Sim Mesh (raw)</text>
+  <text x="150" y="132" text-anchor="middle" fill="#c0c8e0" font-size="11">Very high vertex count</text>
+  <text x="150" y="152" text-anchor="middle" fill="#c0c8e0" font-size="11">Too heavy for RT</text>
+  <text x="150" y="172" text-anchor="middle" fill="#e05c5c" font-size="11">❌ Cannot use as-is</text>
+
+  <!-- Arrow -->
+  <line x1="245" y1="140" x2="315" y2="140" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a3)"/>
+  <text x="280" y="131" text-anchor="middle" fill="#909ab0" font-size="10">MD Retopo</text>
+  <defs>
+    <marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Retopo box -->
+  <rect x="320" y="70" width="220" height="150" rx="8" fill="#2a4a3a"/>
+  <text x="430" y="98" text-anchor="middle" fill="#7affc0" font-size="13" font-weight="bold">MD Retopology Tool</text>
+  <text x="430" y="120" text-anchor="middle" fill="#c0c8e0" font-size="11">Reduce polygon count</text>
+  <text x="430" y="140" text-anchor="middle" fill="#c0c8e0" font-size="11">Preserve garment flow</text>
+  <text x="430" y="163" text-anchor="middle" fill="#909ab0" font-size="11">Goal: rough base only</text>
+  <text x="430" y="183" text-anchor="middle" fill="#909ab0" font-size="11">(polished in Blender next)</text>
+
+  <!-- Arrow -->
+  <line x1="545" y1="140" x2="615" y2="140" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a3b)"/>
+  <defs>
+    <marker id="a3b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Result -->
+  <rect x="620" y="90" width="130" height="100" rx="8" fill="#2a3a5a"/>
+  <text x="685" y="118" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">Rough Retopo</text>
+  <text x="685" y="140" text-anchor="middle" fill="#909ab0" font-size="11">Clean enough</text>
+  <text x="685" y="160" text-anchor="middle" fill="#909ab0" font-size="11">for Blender pass</text>
+
+  <text x="400" y="270" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with MD retopology tool screenshot ]</text>
+</svg>

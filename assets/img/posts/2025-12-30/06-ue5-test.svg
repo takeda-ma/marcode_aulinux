@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="38" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Step 6 — Test in UE5</text>
+
+  <!-- Import -->
+  <rect x="40" y="80" width="155" height="110" rx="8" fill="#2a3a5a"/>
+  <text x="118" y="106" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">Import to UE5</text>
+  <text x="118" y="128" text-anchor="middle" fill="#c0c8e0" font-size="11">Skinned garment</text>
+  <text x="118" y="148" text-anchor="middle" fill="#c0c8e0" font-size="11">FBX / skeletal mesh</text>
+
+  <line x1="199" y1="135" x2="259" y2="135" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a6)"/>
+  <defs>
+    <marker id="a6" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Check box -->
+  <rect x="263" y="65" width="220" height="165" rx="8" fill="#1a3a2a"/>
+  <text x="373" y="93" text-anchor="middle" fill="#7affc0" font-size="13" font-weight="bold">Animation Test</text>
+  <text x="373" y="117" text-anchor="middle" fill="#c0c8e0" font-size="11">✓ No skinning breakdown</text>
+  <text x="373" y="138" text-anchor="middle" fill="#c0c8e0" font-size="11">✓ Silhouette holds</text>
+  <text x="373" y="162" text-anchor="middle" fill="#909ab0" font-size="11">Drive with anim sequence</text>
+  <text x="373" y="183" text-anchor="middle" fill="#909ab0" font-size="11">or anim blueprint</text>
+  <text x="373" y="205" text-anchor="middle" fill="#e05c5c" font-size="11">⚠ Fail → back to Blender</text>
+
+  <line x1="487" y1="135" x2="547" y2="135" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a6b)"/>
+  <defs>
+    <marker id="a6b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Result / loop -->
+  <rect x="551" y="75" width="205" height="130" rx="8" fill="#2a3a5a"/>
+  <text x="654" y="103" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">Pass ✓ → Done</text>
+  <text x="654" y="127" text-anchor="middle" fill="#c0c8e0" font-size="11">Garment ready for</text>
+  <text x="654" y="147" text-anchor="middle" fill="#c0c8e0" font-size="11">production use</text>
+  <text x="654" y="172" text-anchor="middle" fill="#606080" font-size="10">Fail → fix weights or</text>
+  <text x="654" y="188" text-anchor="middle" fill="#606080" font-size="10">revise topology</text>
+
+  <text x="400" y="270" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with UE5 in-editor animation preview screenshot ]</text>
+</svg>

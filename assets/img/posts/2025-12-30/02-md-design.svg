@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" style="font-family:sans-serif;background:#1a1a2e;">
+  <text x="400" y="38" text-anchor="middle" fill="#e0e0e0" font-size="17" font-weight="bold">Step 2 — Clothing Design in Marvelous Designer</text>
+
+  <!-- Store asset -->
+  <rect x="60" y="80" width="180" height="100" rx="8" fill="#3a2a5a"/>
+  <text x="150" y="108" text-anchor="middle" fill="#c0a0ff" font-size="13" font-weight="bold">MD Store Asset</text>
+  <text x="150" y="132" text-anchor="middle" fill="#909ab0" font-size="11">Base garment template</text>
+  <text x="150" y="152" text-anchor="middle" fill="#909ab0" font-size="11">imported &amp; adjusted</text>
+
+  <!-- Arrow -->
+  <line x1="245" y1="130" x2="315" y2="130" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a2)"/>
+  <defs>
+    <marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Simulation box -->
+  <rect x="320" y="65" width="200" height="140" rx="8" fill="#2a4a3a"/>
+  <text x="420" y="93" text-anchor="middle" fill="#7affc0" font-size="13" font-weight="bold">Simulation</text>
+  <text x="420" y="115" text-anchor="middle" fill="#c0c8e0" font-size="11">Wrinkle &amp; drape check</text>
+  <text x="420" y="135" text-anchor="middle" fill="#c0c8e0" font-size="11">Pattern adjustment</text>
+  <text x="420" y="158" text-anchor="middle" fill="#909ab0" font-size="11">Priority: silhouette</text>
+  <text x="420" y="178" text-anchor="middle" fill="#909ab0" font-size="11">over physical realism</text>
+
+  <!-- Arrow -->
+  <line x1="525" y1="130" x2="595" y2="130" stroke="#e0e0e0" stroke-width="2" marker-end="url(#a2b)"/>
+  <defs>
+    <marker id="a2b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e0e0e0"/>
+    </marker>
+  </defs>
+
+  <!-- Result -->
+  <rect x="600" y="80" width="140" height="100" rx="8" fill="#2a3a5a"/>
+  <text x="670" y="108" text-anchor="middle" fill="#7aadff" font-size="12" font-weight="bold">Final Look</text>
+  <text x="670" y="130" text-anchor="middle" fill="#909ab0" font-size="11">Game-ready</text>
+  <text x="670" y="150" text-anchor="middle" fill="#909ab0" font-size="11">silhouette locked</text>
+
+  <text x="400" y="270" text-anchor="middle" fill="#606080" font-size="11">[ placeholder — replace with MD simulation viewport screenshot ]</text>
+</svg>
