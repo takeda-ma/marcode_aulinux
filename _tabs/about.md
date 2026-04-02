@@ -80,17 +80,17 @@ order: 4
 </style>
 
 <div class="about-intro">
-  <h1>私たちについて</h1>
-  <p>Unreal Engine 5を専門とする東京拠点の開発スタジオです。ゲームプレイの設計から実装・リリースまで、プロジェクトに深く関わることを大切にしています。</p>
+  <h1>About Us</h1>
+  <p>Marcode Aulinux is a group of developers who are passionate about developing games using Unreal Engine.</p>
 </div>
 
 <div class="members-heading">Members</div>
 
 <div class="members-grid">
 
-  <a class="member-card" href="{{ '/members/marcode/' | relative_url }}">
-    <img src="/assets/img/members/marcode.svg" alt="marcode aulinux">
-    <div class="name">marcode aulinux</div>
+  <a class="member-card" href="{{ '/members/johji/' | relative_url }}">
+    <img src="/assets/img/members/johji.svg" alt="Johji">
+    <div class="name">Johji</div>
     <div class="role">Founder · Lead Engineer</div>
   </a>
 

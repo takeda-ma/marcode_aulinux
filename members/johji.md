@@ -1,15 +1,15 @@
 ---
 layout: page
-title: marcode aulinux
-permalink: /members/marcode/
+title: Johji
+permalink: /members/johji/
 ---
 
 <div style="display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:2rem;">
-  <img src="/assets/img/members/marcode.svg"
-       alt="marcode aulinux"
+  <img src="/assets/img/members/johji.svg"
+       alt="Johji"
        style="width:120px;height:120px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(128,128,128,.2);">
   <div>
-    <h2 style="margin:0 0 .3rem;">marcode aulinux</h2>
+    <h2 style="margin:0 0 .3rem;">Johji</h2>
     <p style="margin:0 0 .5rem;opacity:.6;font-size:.9rem;">Founder · Lead Engineer</p>
     <p style="margin:0;opacity:.7;font-size:.9rem;">東京在住 · ソフトウェアエンジニア歴12年</p>
   </div>
