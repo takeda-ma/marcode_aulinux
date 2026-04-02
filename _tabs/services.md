@@ -285,27 +285,20 @@ order: 5
     <div class="sv-step">
       <div class="sv-step-inner">
         <span class="num">02</span>
-        <span class="name">要件定義</span>
-      </div>
-    </div>
-    <span class="sv-arrow">›</span>
-    <div class="sv-step">
-      <div class="sv-step-inner">
-        <span class="num">03</span>
         <span class="name">設計・実装</span>
       </div>
     </div>
     <span class="sv-arrow">›</span>
     <div class="sv-step">
       <div class="sv-step-inner">
-        <span class="num">04</span>
+        <span class="num">03</span>
         <span class="name">テスト・QA</span>
       </div>
     </div>
     <span class="sv-arrow">›</span>
     <div class="sv-step">
       <div class="sv-step-inner">
-        <span class="num">05</span>
+        <span class="num">04</span>
         <span class="name">納品・保守</span>
       </div>
     </div>
