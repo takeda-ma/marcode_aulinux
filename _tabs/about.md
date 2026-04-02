@@ -29,53 +29,61 @@ order: 4
   letter-spacing: .14em;
   text-transform: uppercase;
   opacity: .45;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .members-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.4rem;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.8rem;
   margin-bottom: 3rem;
 }
 
 .member-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   color: inherit;
-  border: 1px solid rgba(128,128,128,.18);
-  border-radius: 14px;
-  padding: 1.6rem 1rem 1.2rem;
+  padding: 2rem 1rem 1.6rem;
   text-align: center;
-  transition: border-color .2s, transform .2s, box-shadow .2s;
-  background: var(--card-bg, rgba(255,255,255,.02));
+  transition: transform .2s;
 }
 .member-card:hover {
-  border-color: var(--link-color, #6ea8fe);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  transform: translateY(-4px);
   color: inherit;
   text-decoration: none;
 }
-.member-card img {
-  width: 88px;
-  height: 88px;
+.member-card:hover .member-avatar {
+  border-color: var(--link-color, #6ea8fe);
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+.member-avatar {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
+  overflow: hidden;
+  border: 2.5px solid rgba(128,128,128,.25);
+  margin-bottom: 1.1rem;
+  transition: border-color .2s, box-shadow .2s;
+  flex-shrink: 0;
+}
+.member-avatar img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 1rem;
-  border: 2px solid rgba(128,128,128,.2);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .member-card .name {
   font-weight: 700;
-  font-size: .95rem;
-  margin-bottom: .25rem;
+  font-size: 1rem;
+  margin-bottom: .3rem;
+  line-height: 1.3;
 }
 .member-card .role {
   font-size: .78rem;
-  opacity: .55;
+  opacity: .5;
+  line-height: 1.5;
 }
 </style>
 
@@ -89,7 +97,9 @@ order: 4
 <div class="members-grid">
 
   <a class="member-card" href="{{ '/members/johji/' | relative_url }}">
-    <img src="/assets/img/members/johji.svg" alt="Johji">
+    <div class="member-avatar">
+      <img src="/assets/img/members/johji.svg" alt="Johji">
+    </div>
     <div class="name">Johji</div>
     <div class="role">Founder · Lead Engineer</div>
   </a>
