@@ -1,0 +1,60 @@
+<div id="google_translate_element" style="display:none"></div>
+
+<style>
+  .goog-te-banner-frame,.goog-te-balloon-frame,#goog-gt-tt,.goog-tooltip{display:none!important}
+  body{top:0!important;position:initial!important}
+  #lang-toggle{
+    position:fixed;bottom:5rem;right:1.5rem;z-index:1060;
+    display:flex;align-items:center;gap:.35rem;
+    padding:.4rem .85rem;border-radius:999px;
+    border:1px solid rgba(128,128,128,.4);
+    background:var(--card-bg,#1e1e2e);
+    color:var(--text-muted-color,#aaa);
+    font-size:.78rem;font-weight:600;letter-spacing:.04em;
+    cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.3);
+    text-decoration:none;
+  }
+  #lang-toggle:hover{opacity:.75}
+  #lang-toggle .on{color:var(--link-color,#6ea8fe)}
+</style>
+
+<script>
+(function(){
+  function getCookieLang(){
+    var m=document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+    if(!m)return'ja';
+    var p=decodeURIComponent(m[1]).split('/');
+    return p[p.length-1]||'ja';
+  }
+  function setLang(lang){
+    var e=new Date(Date.now()+365*864e5).toUTCString();
+    var v='/ja/'+lang;
+    document.cookie='googtrans='+v+';expires='+e+';path=/';
+    document.cookie='googtrans='+v+';expires='+e+';path=/;domain=.'+location.hostname.replace(/^www\./,'');
+  }
+  function clearLang(){
+    var p='Thu, 01 Jan 1970 00:00:00 UTC';
+    document.cookie='googtrans=;expires='+p+';path=/';
+    document.cookie='googtrans=;expires='+p+';path=/;domain=.'+location.hostname.replace(/^www\./,'');
+  }
+  var isEN=getCookieLang()==='en';
+  var btn=document.createElement('button');
+  btn.id='lang-toggle';
+  btn.setAttribute('aria-label','Toggle language');
+  btn.innerHTML=isEN
+    ?'<span class="on">EN</span><span>|</span><span>JP</span>'
+    :'<span>EN</span><span>|</span><span class="on">JP</span>';
+  btn.onclick=function(){
+    if(getCookieLang()==='en'){clearLang();}else{setLang('en');}
+    location.reload();
+  };
+  document.currentScript.parentNode.appendChild(btn);
+})();
+</script>
+
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,ja',autoDisplay:false},'google_translate_element');
+}
+</script>
+<script async src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
