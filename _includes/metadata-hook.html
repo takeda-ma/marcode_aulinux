@@ -1,0 +1,105 @@
+<!-- Google Translate + Language Toggle Button -->
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<style>
+  /* Hide Google Translate toolbar */
+  .goog-te-banner-frame,
+  #goog-gt-tt,
+  .goog-te-balloon-frame,
+  .goog-tooltip,
+  .goog-tooltip:hover {
+    display: none !important;
+  }
+  body {
+    top: 0 !important;
+    position: initial !important;
+  }
+
+  /* Toggle button */
+  #lang-toggle {
+    position: fixed;
+    bottom: 5rem;
+    right: 1.5rem;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-color, #444);
+    background: var(--card-bg, #1e1e2e);
+    color: var(--text-muted-color, #aaa);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    transition: opacity 0.15s;
+    user-select: none;
+  }
+  #lang-toggle:hover { opacity: 0.8; }
+  #lang-toggle .lang-active { color: var(--link-color, #6495ed); }
+</style>
+
+<script>
+  // Determine current translation state from cookie
+  function _getLangFromCookie() {
+    var m = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+    if (!m) return 'ja';
+    var parts = decodeURIComponent(m[1]).split('/');
+    return parts[parts.length - 1] || 'ja';
+  }
+
+  function _setGoogTrans(lang) {
+    var exp = new Date(Date.now() + 365 * 86400 * 1000).toUTCString();
+    var val = '/ja/' + lang;
+    document.cookie = 'googtrans=' + val + '; expires=' + exp + '; path=/';
+    // Also set for root domain so subpaths pick it up
+    var host = location.hostname.replace(/^www\./, '');
+    document.cookie = 'googtrans=' + val + '; expires=' + exp + '; path=/; domain=.' + host;
+  }
+
+  function _clearGoogTrans() {
+    var past = 'Thu, 01 Jan 1970 00:00:00 UTC';
+    document.cookie = 'googtrans=; expires=' + past + '; path=/';
+    var host = location.hostname.replace(/^www\./, '');
+    document.cookie = 'googtrans=; expires=' + past + '; path=/; domain=.' + host;
+  }
+
+  // Google Translate init callback
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ja',
+      includedLanguages: 'en,ja',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+
+  // Build the toggle button after DOM is ready
+  document.addEventListener('DOMContentLoaded', function () {
+    var currentLang = _getLangFromCookie();
+    var isEN = (currentLang === 'en');
+
+    var btn = document.createElement('button');
+    btn.id = 'lang-toggle';
+    btn.setAttribute('aria-label', 'Toggle language');
+    btn.innerHTML = isEN
+      ? '<span class="lang-active">EN</span><span>|</span><span>JP</span>'
+      : '<span>EN</span><span>|</span><span class="lang-active">JP</span>';
+
+    btn.addEventListener('click', function () {
+      if (_getLangFromCookie() === 'en') {
+        _clearGoogTrans();
+      } else {
+        _setGoogTrans('en');
+      }
+      location.reload();
+    });
+
+    document.body.appendChild(btn);
+  });
+</script>
+
+<!-- Load Google Translate (async, non-blocking) -->
+<script async src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
