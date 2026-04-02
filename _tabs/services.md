@@ -131,34 +131,53 @@ order: 5
 
 /* ── Process ── */
 .sv-process {
-  margin: 3rem 0;
+  margin: 2.5rem 0;
 }
 .sv-process h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
+  opacity: .8;
 }
 .sv-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 .sv-step {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.sv-step-inner {
   text-align: center;
-  padding: 1.2rem .8rem;
-  border: 1px solid rgba(128,128,128,.15);
-  border-radius: 10px;
+  padding: .5rem .9rem;
+  border: 1px solid rgba(128,128,128,.2);
+  border-radius: 999px;
+  white-space: nowrap;
 }
 .sv-step .num {
-  font-size: .7rem;
-  letter-spacing: .1em;
+  font-size: .62rem;
+  letter-spacing: .08em;
   color: var(--link-color, #6ea8fe);
-  margin-bottom: .4rem;
+  display: block;
+  margin-bottom: .1rem;
 }
 .sv-step .name {
-  font-size: .85rem;
+  font-size: .8rem;
   font-weight: 600;
+}
+.sv-arrow {
+  font-size: .75rem;
+  opacity: .35;
+  padding: 0 .3rem;
+}
+@media (max-width: 600px) {
+  .sv-steps { flex-direction: column; gap: .4rem; }
+  .sv-arrow { transform: rotate(90deg); }
 }
 
 /* ── CTA ── */
@@ -259,24 +278,38 @@ order: 5
   <h2>進め方</h2>
   <div class="sv-steps">
     <div class="sv-step">
-      <div class="num">STEP 01</div>
-      <div class="name">ヒアリング</div>
+      <div class="sv-step-inner">
+        <span class="num">01</span>
+        <span class="name">ヒアリング</span>
+      </div>
     </div>
+    <span class="sv-arrow">›</span>
     <div class="sv-step">
-      <div class="num">STEP 02</div>
-      <div class="name">要件定義</div>
+      <div class="sv-step-inner">
+        <span class="num">02</span>
+        <span class="name">要件定義</span>
+      </div>
     </div>
+    <span class="sv-arrow">›</span>
     <div class="sv-step">
-      <div class="num">STEP 03</div>
-      <div class="name">設計・実装</div>
+      <div class="sv-step-inner">
+        <span class="num">03</span>
+        <span class="name">設計・実装</span>
+      </div>
     </div>
+    <span class="sv-arrow">›</span>
     <div class="sv-step">
-      <div class="num">STEP 04</div>
-      <div class="name">テスト・QA</div>
+      <div class="sv-step-inner">
+        <span class="num">04</span>
+        <span class="name">テスト・QA</span>
+      </div>
     </div>
+    <span class="sv-arrow">›</span>
     <div class="sv-step">
-      <div class="num">STEP 05</div>
-      <div class="name">納品・保守</div>
+      <div class="sv-step-inner">
+        <span class="num">05</span>
+        <span class="name">納品・保守</span>
+      </div>
     </div>
   </div>
 </div>
